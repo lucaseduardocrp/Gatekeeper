@@ -21,5 +21,8 @@
     <Title>NexumPack.Gatekeeper</Title>
     <Summary>Gatekeeper is a fluent way to use Notification Pattern with your entities, concentrating every change you made and easy accessing it when you need.</Summary>
   </PropertyGroup>
-	
+
+    <ItemGroup>
+	    <None Include="icon.png" Pack="true" PackagePath="" />
+    </ItemGroup>
 </Project>
