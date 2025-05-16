@@ -17,7 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Flunt\Gatekeeper.csproj" />
+    <ProjectReference Include="..\Gatekeeper\Gatekeeper.csproj" />
   </ItemGroup>
 
 </Project>

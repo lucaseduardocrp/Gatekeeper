@@ -6,11 +6,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Flunt\Gatekeeper.csproj" />
+    <Folder Include="Handlers\Responses\" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Handlers\Responses\" />
+    <ProjectReference Include="..\Gatekeeper\Gatekeeper.csproj" />
   </ItemGroup>
 
 </Project>
