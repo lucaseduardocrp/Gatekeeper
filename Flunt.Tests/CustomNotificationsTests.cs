@@ -1,10 +1,10 @@
 using System;
 using System.Collections.Generic;
-using Flunt.Notifications;
-using Flunt.Validations;
+using Gatekeeper.Notifications;
+using Gatekeeper.Validations;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace Flunt.Tests
+namespace Gatekeeper.Tests
 {
     [TestClass]
     public class CustomNotificationsTests

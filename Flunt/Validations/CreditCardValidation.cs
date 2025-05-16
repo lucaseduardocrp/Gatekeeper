@@ -1,8 +1,8 @@
 ﻿using System.Linq;
 using System.Text.RegularExpressions;
-using Flunt.Localization;
+using Gatekeeper.Localization;
 
-namespace Flunt.Validations
+namespace Gatekeeper.Validations
 {
     public partial class Contract<T>
     {
@@ -13,7 +13,7 @@ namespace Flunt.Validations
         /// <param name="key"></param>
         /// <returns></returns>
         public Contract<T> IsCreditCard(string val, string key) =>
-            IsCreditCard(val, key, FluntErrorMessages.IsCreditCardErrorMessage(key));
+            IsCreditCard(val, key, GatekeeperErrorMessages.IsCreditCardErrorMessage(key));
 
         /// <summary>
         /// Requires a string is a Credit Card number
@@ -24,7 +24,7 @@ namespace Flunt.Validations
         /// <returns></returns>
         public Contract<T> IsCreditCard(string val, string key, string message)
         {
-            val = Regex.Replace(val, FluntRegexPatterns.OnlyNumbersPattern, "");
+            val = Regex.Replace(val, GatekeeperRegexPatterns.OnlyNumbersPattern, "");
 
             if (string.IsNullOrWhiteSpace(val))
             {

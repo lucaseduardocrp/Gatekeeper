@@ -1,6 +1,6 @@
-﻿using Flunt.Validations;
+﻿using Gatekeeper.Validations;
 
-namespace Flunt.Samples.ValueObjects.Contracts
+namespace Gatekeeper.Samples.ValueObjects.Contracts
 {
     public class CreateEmailContract : Contract<Email>
     {

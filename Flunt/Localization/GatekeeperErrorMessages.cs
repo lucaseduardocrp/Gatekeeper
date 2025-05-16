@@ -1,6 +1,6 @@
-﻿namespace Flunt.Localization
+﻿namespace Gatekeeper.Localization
 {
-    public static class FluntErrorMessages
+    public static class GatekeeperErrorMessages
     {
         public static string AndLocalizationErrorMessageLocalization = "and";
         public static string OrLocalizationErrorMessageLocalization = "or";

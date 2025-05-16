@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Flunt.Localization;
+using Gatekeeper.Localization;
 
-namespace Flunt.Validations
+namespace Gatekeeper.Validations
 {
     public partial class Contract<T>
     {
@@ -16,7 +16,7 @@ namespace Flunt.Validations
         /// <param name="key">Key or Property Name</param>
         /// <returns></returns>
         public Contract<T> IsGreaterThan(TimeSpan val, TimeSpan comparer, string key) =>
-            IsGreaterThan(val, comparer, key, FluntErrorMessages.IsGreaterThanErrorMessage(key, comparer.ToString()));
+            IsGreaterThan(val, comparer, key, GatekeeperErrorMessages.IsGreaterThanErrorMessage(key, comparer.ToString()));
 
         /// <summary>
         /// Requires a date is greater than
@@ -44,7 +44,7 @@ namespace Flunt.Validations
         /// <param name="key">Key or Property Name</param>
         /// <returns></returns>
         public Contract<T> IsGreaterOrEqualsThan(TimeSpan val, TimeSpan comparer, string key) =>
-            IsGreaterOrEqualsThan(val, comparer, key, FluntErrorMessages.IsGreaterOrEqualsThanErrorMessage(key, comparer.ToString()));
+            IsGreaterOrEqualsThan(val, comparer, key, GatekeeperErrorMessages.IsGreaterOrEqualsThanErrorMessage(key, comparer.ToString()));
 
         /// <summary>
         /// Requires a date is greater or equals than
@@ -72,7 +72,7 @@ namespace Flunt.Validations
         /// <param name="key">Key or Property Name</param>
         /// <returns></returns>
         public Contract<T> IsLowerThan(TimeSpan val, TimeSpan comparer, string key) =>
-            IsLowerThan(val, comparer, key, FluntErrorMessages.IsLowerThanErrorMessage(key, comparer.ToString()));
+            IsLowerThan(val, comparer, key, GatekeeperErrorMessages.IsLowerThanErrorMessage(key, comparer.ToString()));
 
         /// <summary>
         /// Requires a date is lower than
@@ -100,7 +100,7 @@ namespace Flunt.Validations
         /// <param name="key">Key or Property Name</param>
         /// <returns></returns>
         public Contract<T> IsLowerOrEqualsThan(TimeSpan val, TimeSpan comparer, string key) =>
-            IsLowerOrEqualsThan(val, comparer, key, FluntErrorMessages.IsLowerOrEqualsThanErrorMessage(key, comparer.ToString()));
+            IsLowerOrEqualsThan(val, comparer, key, GatekeeperErrorMessages.IsLowerOrEqualsThanErrorMessage(key, comparer.ToString()));
 
         /// <summary>
         /// Requires a date is lower or equals than
@@ -127,7 +127,7 @@ namespace Flunt.Validations
         /// <param name="key">Key or Property Name</param>
         /// <returns></returns>
         public Contract<T> IsNull(TimeSpan? val, string key) =>
-            IsNull(val, key, FluntErrorMessages.IsNullErrorMessage(key));
+            IsNull(val, key, GatekeeperErrorMessages.IsNullErrorMessage(key));
 
         /// <summary>
         /// Requires a date is null
@@ -153,7 +153,7 @@ namespace Flunt.Validations
         /// <param name="key">Key or Property Name</param>
         /// <returns></returns>
         public Contract<T> IsNotNull(TimeSpan? val, string key) =>
-            IsNotNull(val, key, FluntErrorMessages.IsNotNullErrorMessage(key));
+            IsNotNull(val, key, GatekeeperErrorMessages.IsNotNullErrorMessage(key));
 
         /// <summary>
         /// Requires a date is not null
@@ -181,7 +181,7 @@ namespace Flunt.Validations
         /// <param name="key">Key or Property Name</param>
         /// <returns></returns>
         public Contract<T> IsBetween(TimeSpan val, TimeSpan start, TimeSpan end, string key) =>
-            IsBetween(val, start, end, key, FluntErrorMessages.IsBetweenErrorMessage(key, start.ToString(), end.ToString()));
+            IsBetween(val, start, end, key, GatekeeperErrorMessages.IsBetweenErrorMessage(key, start.ToString(), end.ToString()));
 
         /// <summary>
         /// Requires a date is between
@@ -211,7 +211,7 @@ namespace Flunt.Validations
         /// <param name="key">Key or Property Name</param>
         /// <returns></returns>
         public Contract<T> IsNotBetween(TimeSpan val, TimeSpan start, TimeSpan end, string key) =>
-            IsNotBetween(val, start, end, key, FluntErrorMessages.IsNotBetweenErrorMessage(key, start.ToString(), end.ToString()));
+            IsNotBetween(val, start, end, key, GatekeeperErrorMessages.IsNotBetweenErrorMessage(key, start.ToString(), end.ToString()));
 
         /// <summary>
         /// Requires a date is not between
@@ -239,7 +239,7 @@ namespace Flunt.Validations
         /// <param name="key">Key or Property Name</param>
         /// <returns></returns>
         public Contract<T> IsMinValue(TimeSpan val, string key) =>
-            IsMinValue(val, key, FluntErrorMessages.IsMinValueErrorMessage(key, TimeSpan.MinValue.ToString()));
+            IsMinValue(val, key, GatekeeperErrorMessages.IsMinValueErrorMessage(key, TimeSpan.MinValue.ToString()));
 
 
         /// <summary>
@@ -266,7 +266,7 @@ namespace Flunt.Validations
         /// <param name="key">Key or Property Name</param>
         /// <returns></returns>
         public Contract<T> IsNotMinValue(TimeSpan val, string key) =>
-            IsNotMinValue(val, key, FluntErrorMessages.IsNotMinValueErrorMessage(key, TimeSpan.MinValue.ToString()));
+            IsNotMinValue(val, key, GatekeeperErrorMessages.IsNotMinValueErrorMessage(key, TimeSpan.MinValue.ToString()));
 
 
         /// <summary>
@@ -293,7 +293,7 @@ namespace Flunt.Validations
         /// <param name="key">Key or Property Name</param>
         /// <returns></returns>
         public Contract<T> IsMaxValue(TimeSpan val, string key) =>
-            IsMaxValue(val, key, FluntErrorMessages.IsMaxValueErrorMessage(key, TimeSpan.MaxValue.ToString()));
+            IsMaxValue(val, key, GatekeeperErrorMessages.IsMaxValueErrorMessage(key, TimeSpan.MaxValue.ToString()));
 
 
         /// <summary>
@@ -320,7 +320,7 @@ namespace Flunt.Validations
         /// <param name="key">Key or Property Name</param>
         /// <returns></returns>
         public Contract<T> IsNotMaxValue(TimeSpan val, string key) =>
-            IsNotMaxValue(val, key, FluntErrorMessages.IsNotMaxValueErrorMessage(key, TimeSpan.MaxValue.ToString()));
+            IsNotMaxValue(val, key, GatekeeperErrorMessages.IsNotMaxValueErrorMessage(key, TimeSpan.MaxValue.ToString()));
 
 
         /// <summary>
@@ -349,7 +349,7 @@ namespace Flunt.Validations
         /// <param name="key">Key or Property Name</param>
         /// <returns></returns>
         public Contract<T> AreEquals(TimeSpan val, TimeSpan comparer, string key)
-            => AreEquals(val, comparer, key, FluntErrorMessages.AreEqualsErrorMessage(val.ToString(), comparer.ToString()));
+            => AreEquals(val, comparer, key, GatekeeperErrorMessages.AreEqualsErrorMessage(val.ToString(), comparer.ToString()));
 
         /// <summary>
         /// Require dates are equals
@@ -377,7 +377,7 @@ namespace Flunt.Validations
         /// <param name="key">Key or Property Name</param>
         /// <returns></returns>
         public Contract<T> AreNotEquals(TimeSpan val, TimeSpan comparer, string key)
-            => AreNotEquals(val, comparer, key, FluntErrorMessages.AreNotEqualsErrorMessage(val.ToString(), comparer.ToString()));
+            => AreNotEquals(val, comparer, key, GatekeeperErrorMessages.AreNotEqualsErrorMessage(val.ToString(), comparer.ToString()));
 
         /// <summary>
         /// Requires two dates are not equals
@@ -405,7 +405,7 @@ namespace Flunt.Validations
         /// <param name="key">Key or Property Name</param>
         /// <returns></returns>
         public Contract<T> Contains(TimeSpan val, IEnumerable<TimeSpan> list, string key)
-            => Contains(val, list, key, FluntErrorMessages.ContainsErrorMessage(key, val.ToString()));
+            => Contains(val, list, key, GatekeeperErrorMessages.ContainsErrorMessage(key, val.ToString()));
 
         /// <summary>
         /// Requires a list contains a date
@@ -433,7 +433,7 @@ namespace Flunt.Validations
         /// <param name="key">Key or Property Name</param>
         /// <returns></returns>
         public Contract<T> NotContains(TimeSpan val, IEnumerable<TimeSpan> list, string key)
-            => NotContains(val, list, key, FluntErrorMessages.NotContainsErrorMessage(key, val.ToString()));
+            => NotContains(val, list, key, GatekeeperErrorMessages.NotContainsErrorMessage(key, val.ToString()));
 
         /// <summary>
         /// Requires a list not contains a date

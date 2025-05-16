@@ -1,8 +1,8 @@
-﻿using Flunt.Tests.Entities;
-using Flunt.Validations;
+﻿using Gatekeeper.Validations;
+using Gatekeeper.Tests.Entities;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace Flunt.Tests
+namespace Gatekeeper.Tests
 {
     [TestClass]
     public class ObjectValidationTests

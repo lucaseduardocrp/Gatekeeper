@@ -1,7 +1,7 @@
-﻿using Flunt.Notifications;
+﻿using Gatekeeper.Notifications;
 using System;
 
-namespace Flunt.Validations
+namespace Gatekeeper.Validations
 {
     public partial class Contract<T> : Notifiable<Notification>
     {

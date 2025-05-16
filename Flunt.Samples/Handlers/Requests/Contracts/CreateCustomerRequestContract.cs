@@ -1,6 +1,6 @@
-﻿using Flunt.Validations;
+﻿using Gatekeeper.Validations;
 
-namespace Flunt.Samples.Handlers.Requests.Contracts
+namespace Gatekeeper.Samples.Handlers.Requests.Contracts
 {
     public class CreateCustomerRequestContract : Contract<CreateCustomerRequest>
     {

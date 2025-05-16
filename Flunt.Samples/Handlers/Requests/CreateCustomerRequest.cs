@@ -1,7 +1,7 @@
-﻿using Flunt.Notifications;
-using Flunt.Samples.Handlers.Requests.Contracts;
+﻿using Gatekeeper.Notifications;
+using Gatekeeper.Samples.Handlers.Requests.Contracts;
 
-namespace Flunt.Samples.Handlers.Requests
+namespace Gatekeeper.Samples.Handlers.Requests
 {
     public class CreateCustomerRequest : Notifiable<Notification>
     {

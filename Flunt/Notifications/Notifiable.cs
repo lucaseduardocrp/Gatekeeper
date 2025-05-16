@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Flunt.Notifications
+namespace Gatekeeper.Notifications
 {
     public abstract class Notifiable<T> where T : Notification
     {

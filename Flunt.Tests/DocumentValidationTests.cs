@@ -1,7 +1,7 @@
-﻿using Flunt.Validations;
+﻿using Gatekeeper.Validations;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace Flunt.Tests
+namespace Gatekeeper.Tests
 {
     [TestClass]
     public class DocumentValidationTests

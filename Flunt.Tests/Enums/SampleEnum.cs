@@ -1,4 +1,4 @@
-﻿namespace Flunt.Tests.Enums
+﻿namespace Gatekeeper.Tests.Enums
 {
     public enum SampleEnum
     {

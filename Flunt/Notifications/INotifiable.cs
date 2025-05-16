@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Flunt.Notifications
+namespace Gatekeeper.Notifications
 {
     public interface INotifiable
     {

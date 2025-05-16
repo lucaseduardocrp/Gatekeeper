@@ -1,15 +1,15 @@
 ﻿using System;
-using Flunt.Localization;
-using Flunt.Samples.Handlers;
-using Flunt.Samples.Handlers.Requests;
+using Gatekeeper.Localization;
+using Gatekeeper.Samples.Handlers;
+using Gatekeeper.Samples.Handlers.Requests;
 
-namespace Flunt.Samples
+namespace Gatekeeper.Samples
 {
     class Program
     {
         static void Main(string[] args)
         {
-            FluntErrorMessages.IsEmailLocalizationErrorMessage = "deve ser um E-mail";
+            GatekeeperErrorMessages.IsEmailLocalizationErrorMessage = "deve ser um E-mail";
 
             var request = new CreateCustomerRequest("", "");
             var handler = new CustomerHandler();

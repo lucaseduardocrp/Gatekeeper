@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Flunt.Notifications;
-using Flunt.Samples.Entities;
-using Flunt.Samples.Handlers.Requests;
-using Flunt.Samples.ValueObjects;
+﻿using Gatekeeper.Notifications;
+using Gatekeeper.Samples.Entities;
+using Gatekeeper.Samples.ValueObjects;
+using Gatekeeper.Samples.Handlers.Requests;
 
-namespace Flunt.Samples.Handlers
+namespace Gatekeeper.Samples.Handlers
 {
     public class CustomerHandler : Notifiable<Notification>
     {

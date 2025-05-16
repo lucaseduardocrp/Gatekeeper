@@ -1,4 +1,4 @@
-﻿namespace Flunt.Notifications
+﻿namespace Gatekeeper.Notifications
 {
     public class Notification
     {

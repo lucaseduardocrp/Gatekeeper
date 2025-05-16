@@ -1,13 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30907.101
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35919.96
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Flunt", "Flunt\Flunt.csproj", "{8BC195E8-08FC-403B-8E67-261928C7C539}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gatekeeper", "Flunt\Gatekeeper.csproj", "{8BC195E8-08FC-403B-8E67-261928C7C539}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Flunt.Tests", "Flunt.Tests\Flunt.Tests.csproj", "{C6AD8DB5-7A43-478C-A5F5-34673357838C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gatekeeper.Tests", "Flunt.Tests\Gatekeeper.Tests.csproj", "{C6AD8DB5-7A43-478C-A5F5-34673357838C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flunt.Samples", "Flunt.Samples\Flunt.Samples.csproj", "{679D0442-90D1-409F-9947-98C402F11752}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gatekeeper.Samples", "Flunt.Samples\Gatekeeper.Samples.csproj", "{679D0442-90D1-409F-9947-98C402F11752}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

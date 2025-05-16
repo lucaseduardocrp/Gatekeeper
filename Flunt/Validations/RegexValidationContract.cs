@@ -1,7 +1,7 @@
 ﻿using System.Text.RegularExpressions;
-using Flunt.Localization;
+using Gatekeeper.Localization;
 
-namespace Flunt.Validations
+namespace Gatekeeper.Validations
 {
     public partial class Contract<T>
     {
@@ -13,7 +13,7 @@ namespace Flunt.Validations
         /// <param name="key"></param>
         /// <returns></returns>
         public Contract<T> Matches(string val, string pattern, string key) =>
-            Matches(val, pattern, key, FluntErrorMessages.MatchesErrorMessage(key, pattern));
+            Matches(val, pattern, key, GatekeeperErrorMessages.MatchesErrorMessage(key, pattern));
 
         /// <summary>
         /// Requires a string matches a regex pattern
@@ -39,7 +39,7 @@ namespace Flunt.Validations
         /// <param name="key"></param>
         /// <returns></returns>
         public Contract<T> NotMatches(string val, string pattern, string key) =>
-            NotMatches(val, pattern, key, FluntErrorMessages.NotMatchesErrorMessage(key, pattern));
+            NotMatches(val, pattern, key, GatekeeperErrorMessages.NotMatchesErrorMessage(key, pattern));
 
         /// <summary>
         /// Requires a string not matches a regex pattern

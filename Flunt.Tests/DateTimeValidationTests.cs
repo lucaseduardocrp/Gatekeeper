@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Flunt.Tests.Entities;
-using Flunt.Validations;
+using Gatekeeper.Validations;
+using Gatekeeper.Tests.Entities;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace Flunt.Tests
+namespace Gatekeeper.Tests
 {
     [TestClass]
     public class DateTimeValidationTests

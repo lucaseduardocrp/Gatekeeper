@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using Flunt.Tests.Enums;
+using Gatekeeper.Tests.Enums;
 
-namespace Flunt.Tests.Entities
+namespace Gatekeeper.Tests.Entities
 {
     public class SampleEntity
     {

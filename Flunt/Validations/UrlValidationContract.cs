@@ -1,6 +1,6 @@
-﻿using Flunt.Localization;
+﻿using Gatekeeper.Localization;
 
-namespace Flunt.Validations
+namespace Gatekeeper.Validations
 {
     public partial class Contract<T>
     {
@@ -11,7 +11,7 @@ namespace Flunt.Validations
         /// <param name="key"></param>
         /// <returns></returns>
         public Contract<T> IsUrl(string val, string key) =>
-            IsUrl(val, key, FluntErrorMessages.IsUrlErrorMessage(key));
+            IsUrl(val, key, GatekeeperErrorMessages.IsUrlErrorMessage(key));
 
         /// <summary>
         /// Requires a string is an URL
@@ -21,7 +21,7 @@ namespace Flunt.Validations
         /// <param name="message"></param>
         /// <returns></returns>
         public Contract<T> IsUrl(string val, string key, string message) =>
-            Matches(val, FluntRegexPatterns.UrlRegexPattern, key, message);
+            Matches(val, GatekeeperRegexPatterns.UrlRegexPattern, key, message);
 
         /// <summary>
         /// Requires a string is an URL or empty
@@ -30,7 +30,7 @@ namespace Flunt.Validations
         /// <param name="key"></param>
         /// <returns></returns>
         public Contract<T> IsUrlOrEmpty(string val, string key) =>
-            IsUrlOrEmpty(val, key, FluntErrorMessages.IsUrlOrEmptyErrorMessage(key));
+            IsUrlOrEmpty(val, key, GatekeeperErrorMessages.IsUrlOrEmptyErrorMessage(key));
 
         /// <summary>
         /// Requires a string is an URL or empty
@@ -43,7 +43,7 @@ namespace Flunt.Validations
         {
             return string.IsNullOrEmpty(val) ?
                 this :
-                Matches(val, FluntRegexPatterns.UrlRegexPattern, key, message);
+                Matches(val, GatekeeperRegexPatterns.UrlRegexPattern, key, message);
         }
 
         /// <summary>
@@ -53,7 +53,7 @@ namespace Flunt.Validations
         /// <param name="key"></param>
         /// <returns></returns>
         public Contract<T> IsNotUrl(string val, string key) =>
-            IsNotUrl(val, key, FluntErrorMessages.IsNotUrlErrorMessage(key));
+            IsNotUrl(val, key, GatekeeperErrorMessages.IsNotUrlErrorMessage(key));
 
         /// <summary>
         /// Requires a string is not an URL
@@ -63,7 +63,7 @@ namespace Flunt.Validations
         /// <param name="message"></param>
         /// <returns></returns>
         public Contract<T> IsNotUrl(string val, string key, string message) =>
-            NotMatches(val, FluntRegexPatterns.UrlRegexPattern, key, message);
+            NotMatches(val, GatekeeperRegexPatterns.UrlRegexPattern, key, message);
 
         /// <summary>
         /// Requires a string is not an URL or is empty
@@ -72,7 +72,7 @@ namespace Flunt.Validations
         /// <param name="key"></param>
         /// <returns></returns>
         public Contract<T> IsNotUrlOrEmpty(string val, string key) =>
-            IsNotUrlOrEmpty(val, key, FluntErrorMessages.IsNotUrlOrEmptyErrorMessage(key));
+            IsNotUrlOrEmpty(val, key, GatekeeperErrorMessages.IsNotUrlOrEmptyErrorMessage(key));
 
         /// <summary>
         /// Requires a string is not an URL or is empty
@@ -85,7 +85,7 @@ namespace Flunt.Validations
         {
             return string.IsNullOrEmpty(val) ?
                 this :
-                NotMatches(val, FluntRegexPatterns.UrlRegexPattern, key, message);
+                NotMatches(val, GatekeeperRegexPatterns.UrlRegexPattern, key, message);
         }
     }
 }

@@ -1,6 +1,6 @@
-﻿using Flunt.Localization;
+﻿using Gatekeeper.Localization;
 
-namespace Flunt.Validations
+namespace Gatekeeper.Validations
 {
     public partial class Contract<T>
     {
@@ -12,7 +12,7 @@ namespace Flunt.Validations
         /// <param name="property">Key or Property Name</param>
         /// <returns></returns>
         public Contract<T> IsFalse(bool val, string property) =>
-            IsFalse(val, property, FluntErrorMessages.IsFalseErrorMessage(property));
+            IsFalse(val, property, GatekeeperErrorMessages.IsFalseErrorMessage(property));
 
         /// <summary>
         /// Requires that a bool is false
@@ -38,7 +38,7 @@ namespace Flunt.Validations
         /// <param name="property">Key or Property Name</param>
         /// <returns></returns>
         public Contract<T> IsTrue(bool val, string property) =>
-            IsTrue(val, property, FluntErrorMessages.IsTrueErrorMessage(property));
+            IsTrue(val, property, GatekeeperErrorMessages.IsTrueErrorMessage(property));
 
         /// <summary>
         /// Requires that a bool is true
@@ -64,7 +64,7 @@ namespace Flunt.Validations
         /// <param name="property">Key or Property Name</param>
         /// <returns></returns>
         public Contract<T> IsNull(bool? val, string property) =>
-                IsNull(val, property, FluntErrorMessages.IsNullErrorMessage(property));
+                IsNull(val, property, GatekeeperErrorMessages.IsNullErrorMessage(property));
 
         /// <summary>
         /// Requires that a bool is null
@@ -90,7 +90,7 @@ namespace Flunt.Validations
         /// <param name="property">Key or Property Name</param>
         /// <returns></returns>
         public Contract<T> IsNotNull(bool? val, string property) =>
-            IsNotNull(val, property, FluntErrorMessages.IsNotNullErrorMessage(property));
+            IsNotNull(val, property, GatekeeperErrorMessages.IsNotNullErrorMessage(property));
 
         /// <summary>
         /// Requires that a bool is not null

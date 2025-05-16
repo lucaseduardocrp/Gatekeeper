@@ -1,7 +1,7 @@
-﻿using Flunt.Notifications;
-using Flunt.Samples.ValueObjects.Contracts;
+﻿using Gatekeeper.Notifications;
+using Gatekeeper.Samples.ValueObjects.Contracts;
 
-namespace Flunt.Samples.ValueObjects
+namespace Gatekeeper.Samples.ValueObjects
 {
     public class Email : Notifiable<Notification>
     {

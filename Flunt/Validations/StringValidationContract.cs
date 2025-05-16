@@ -1,6 +1,6 @@
-﻿using Flunt.Localization;
+﻿using Gatekeeper.Localization;
 
-namespace Flunt.Validations
+namespace Gatekeeper.Validations
 {
     public partial class Contract<T>
     {
@@ -11,7 +11,7 @@ namespace Flunt.Validations
         /// <param name="key"></param>
         /// <returns></returns>
         public Contract<T> IsNull(string val, string key) =>
-            IsNull(val, key, FluntErrorMessages.IsNullErrorMessage(key));
+            IsNull(val, key, GatekeeperErrorMessages.IsNullErrorMessage(key));
 
         /// <summary>
         /// Requires a string is null
@@ -35,7 +35,7 @@ namespace Flunt.Validations
         /// <param name="key"></param>
         /// <returns></returns>
         public Contract<T> IsNotNull(string val, string key) =>
-            IsNotNull(val, key, FluntErrorMessages.IsNotNullErrorMessage(key));
+            IsNotNull(val, key, GatekeeperErrorMessages.IsNotNullErrorMessage(key));
 
         /// <summary>
         /// Requires a string is not null
@@ -59,7 +59,7 @@ namespace Flunt.Validations
         /// <param name="key"></param>
         /// <returns></returns>
         public Contract<T> IsNullOrEmpty(string val, string key) =>
-            IsNullOrEmpty(val, key, FluntErrorMessages.IsNullOrEmptyErrorMessage(key));
+            IsNullOrEmpty(val, key, GatekeeperErrorMessages.IsNullOrEmptyErrorMessage(key));
 
         /// <summary>
         /// Requires a string is null or empty
@@ -83,7 +83,7 @@ namespace Flunt.Validations
         /// <param name="key"></param>
         /// <returns></returns>
         public Contract<T> IsNotNullOrEmpty(string val, string key) =>
-            IsNotNullOrEmpty(val, key, FluntErrorMessages.IsNotNullOrEmptyErrorMessage(key));
+            IsNotNullOrEmpty(val, key, GatekeeperErrorMessages.IsNotNullOrEmptyErrorMessage(key));
 
         /// <summary>
         /// Requires a string is not null or empty
@@ -107,7 +107,7 @@ namespace Flunt.Validations
         /// <param name="key"></param>
         /// <returns></returns>
         public Contract<T> IsNullOrWhiteSpace(string val, string key) =>
-            IsNullOrWhiteSpace(val, key, FluntErrorMessages.IsNullOrWhiteSpaceErrorMessage(key));
+            IsNullOrWhiteSpace(val, key, GatekeeperErrorMessages.IsNullOrWhiteSpaceErrorMessage(key));
 
         /// <summary>
         /// Requires a string is null or white space
@@ -131,7 +131,7 @@ namespace Flunt.Validations
         /// <param name="key"></param>
         /// <returns></returns>
         public Contract<T> IsNotNullOrWhiteSpace(string val, string key) =>
-            IsNotNullOrWhiteSpace(val, key, FluntErrorMessages.IsNotNullOrWhiteSpaceErrorMessage(key));
+            IsNotNullOrWhiteSpace(val, key, GatekeeperErrorMessages.IsNotNullOrWhiteSpaceErrorMessage(key));
 
         /// <summary>
         /// Requires a string is not null or white space
@@ -156,7 +156,7 @@ namespace Flunt.Validations
         /// <param name="key"></param>
         /// <returns></returns>
         public Contract<T> AreEquals(string val, string comparer, string key) =>
-            AreEquals(val, comparer, key, FluntErrorMessages.AreEqualsErrorMessage(val, comparer));
+            AreEquals(val, comparer, key, GatekeeperErrorMessages.AreEqualsErrorMessage(val, comparer));
 
         /// <summary>
         /// Requires two strings are equals
@@ -183,7 +183,7 @@ namespace Flunt.Validations
         /// <param name="message"></param>
         /// <returns></returns>
         public Contract<T> AreEquals(string val, int comparer, string key) =>
-            AreEquals(val, comparer, key, FluntErrorMessages.AreEqualsErrorMessage(val, comparer.ToString()));
+            AreEquals(val, comparer, key, GatekeeperErrorMessages.AreEqualsErrorMessage(val, comparer.ToString()));
 
         /// <summary>
         /// Requires a string have a len
@@ -212,7 +212,7 @@ namespace Flunt.Validations
         /// <param name="key"></param>
         /// <returns></returns>
         public Contract<T> AreNotEquals(string val, string comparer, string key) =>
-            AreNotEquals(val, comparer, key, FluntErrorMessages.AreNotEqualsErrorMessage(val, comparer));
+            AreNotEquals(val, comparer, key, GatekeeperErrorMessages.AreNotEqualsErrorMessage(val, comparer));
 
         /// <summary>
         /// Requires two strings are not equals
@@ -239,7 +239,7 @@ namespace Flunt.Validations
         /// <param name="message"></param>
         /// <returns></returns>
         public Contract<T> AreNotEquals(string val, int comparer, string key) =>
-            AreNotEquals(val, comparer, key, FluntErrorMessages.AreNotEqualsErrorMessage(val, comparer.ToString()));
+            AreNotEquals(val, comparer, key, GatekeeperErrorMessages.AreNotEqualsErrorMessage(val, comparer.ToString()));
 
         /// <summary>
         /// Requires a string do not have a len
@@ -269,7 +269,7 @@ namespace Flunt.Validations
         /// <param name="key"></param>
         /// <returns></returns>
         public Contract<T> Contains(string val, string comparer, string key) =>
-            Contains(val, comparer, key, FluntErrorMessages.ContainsErrorMessage(val, comparer));
+            Contains(val, comparer, key, GatekeeperErrorMessages.ContainsErrorMessage(val, comparer));
 
         /// <summary>
         /// Requires a string contains
@@ -298,7 +298,7 @@ namespace Flunt.Validations
         /// <param name="key"></param>
         /// <returns></returns>
         public Contract<T> NotContains(string val, string comparer, string key) =>
-            NotContains(val, comparer, key, FluntErrorMessages.NotContainsErrorMessage(val, comparer));
+            NotContains(val, comparer, key, GatekeeperErrorMessages.NotContainsErrorMessage(val, comparer));
 
         /// <summary>
         /// Requires a string not contains
@@ -327,7 +327,7 @@ namespace Flunt.Validations
         /// <param name="key"></param>
         /// <returns></returns>
         public Contract<T> IsGreaterThan(string val, int comparer, string key) =>
-            IsGreaterThan(val, comparer, key, FluntErrorMessages.IsGreaterThanErrorMessage(key, comparer.ToString()));
+            IsGreaterThan(val, comparer, key, GatekeeperErrorMessages.IsGreaterThanErrorMessage(key, comparer.ToString()));
 
         /// <summary>
         /// Requires a string is greater than
@@ -356,7 +356,7 @@ namespace Flunt.Validations
         /// <param name="key"></param>
         /// <returns></returns>
         public Contract<T> IsGreaterOrEqualsThan(string val, int comparer, string key) =>
-            IsGreaterOrEqualsThan(val, comparer, key, FluntErrorMessages.IsGreaterOrEqualsThanErrorMessage(key, comparer.ToString()));
+            IsGreaterOrEqualsThan(val, comparer, key, GatekeeperErrorMessages.IsGreaterOrEqualsThanErrorMessage(key, comparer.ToString()));
 
         /// <summary>
         /// Requires a string len is greater or equals than
@@ -385,7 +385,7 @@ namespace Flunt.Validations
         /// <param name="key"></param>
         /// <returns></returns>
         public Contract<T> IsLowerThan(string val, int comparer, string key) =>
-            IsLowerThan(val, comparer, key, FluntErrorMessages.IsLowerThanErrorMessage(key, comparer.ToString()));
+            IsLowerThan(val, comparer, key, GatekeeperErrorMessages.IsLowerThanErrorMessage(key, comparer.ToString()));
 
         /// <summary>
         /// Requires a string len is lower than
@@ -414,7 +414,7 @@ namespace Flunt.Validations
         /// <param name="key"></param>
         /// <returns></returns>
         public Contract<T> IsLowerOrEqualsThan(string val, int comparer, string key) =>
-            IsLowerOrEqualsThan(val, comparer, key, FluntErrorMessages.IsLowerOrEqualsThanErrorMessage(key, comparer.ToString()));
+            IsLowerOrEqualsThan(val, comparer, key, GatekeeperErrorMessages.IsLowerOrEqualsThanErrorMessage(key, comparer.ToString()));
 
         /// <summary>
         /// Requires a string len is lower or equals than

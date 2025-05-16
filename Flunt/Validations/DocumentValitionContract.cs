@@ -1,6 +1,6 @@
-﻿using Flunt.Localization;
+﻿using Gatekeeper.Localization;
 
-namespace Flunt.Validations
+namespace Gatekeeper.Validations
 {
     public partial class Contract<T>
     {
@@ -11,7 +11,7 @@ namespace Flunt.Validations
         /// <param name="key"></param>
         /// <returns></returns>
         public Contract<T> IsPassport(string val, string key) =>
-            IsPassport(val, key, FluntErrorMessages.IsPassportErrorMessage(key));
+            IsPassport(val, key, GatekeeperErrorMessages.IsPassportErrorMessage(key));
 
         /// <summary>
         /// Requires a string is a passport number
@@ -21,6 +21,6 @@ namespace Flunt.Validations
         /// <param name="message"></param>
         /// <returns></returns>
         public Contract<T> IsPassport(string val, string key, string message) => 
-            Matches(val, FluntRegexPatterns.PassportRegexPattern, key, message);
+            Matches(val, GatekeeperRegexPatterns.PassportRegexPattern, key, message);
     }
 }

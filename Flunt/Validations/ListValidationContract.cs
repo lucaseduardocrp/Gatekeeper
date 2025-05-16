@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using Flunt.Localization;
+using Gatekeeper.Localization;
 
-namespace Flunt.Validations
+namespace Gatekeeper.Validations
 {
     public partial class Contract<T>
     {
@@ -14,7 +14,7 @@ namespace Flunt.Validations
         /// <param name="key"></param>
         /// <returns></returns>
         public Contract<T> IsNull<TList>(IEnumerable<TList> val, string key) =>
-            IsNull(val, key, FluntErrorMessages.IsNullErrorMessage(key));
+            IsNull(val, key, GatekeeperErrorMessages.IsNullErrorMessage(key));
 
         /// <summary>
         /// Requires a list is null
@@ -40,7 +40,7 @@ namespace Flunt.Validations
         /// <param name="key"></param>
         /// <returns></returns>
         public Contract<T> IsNotNull<TList>(IEnumerable<TList> val, string key) =>
-            IsNull(val, key, FluntErrorMessages.IsNotNullErrorMessage(key));
+            IsNull(val, key, GatekeeperErrorMessages.IsNotNullErrorMessage(key));
 
         /// <summary>
         /// Requires a list is not null
@@ -66,7 +66,7 @@ namespace Flunt.Validations
         /// <param name="key"></param>
         /// <returns></returns>
         public Contract<T> IsEmpty<TList>(IEnumerable<TList> val, string key) =>
-            IsEmpty(val, key, FluntErrorMessages.IsEmptyErrorMessage(key));
+            IsEmpty(val, key, GatekeeperErrorMessages.IsEmptyErrorMessage(key));
 
         /// <summary>
         /// Requires a list contains no elements
@@ -92,7 +92,7 @@ namespace Flunt.Validations
         /// <param name="key"></param>
         /// <returns></returns>
         public Contract<T> IsNotEmpty<TList>(IEnumerable<TList> val, string key) =>
-            IsNotEmpty(val, key, FluntErrorMessages.IsNotEmptyErrorMessage(key));
+            IsNotEmpty(val, key, GatekeeperErrorMessages.IsNotEmptyErrorMessage(key));
 
         /// <summary>
         /// Requires a list contains at least one element
@@ -119,7 +119,7 @@ namespace Flunt.Validations
         /// <param name="key"></param>
         /// <returns></returns>
         public Contract<T> IsGreaterThan<TList>(IEnumerable<TList> val, int comparer, string key) =>
-            IsGreaterThan(val, comparer, key, FluntErrorMessages.IsGreaterThanErrorMessage(key, comparer.ToString()));
+            IsGreaterThan(val, comparer, key, GatekeeperErrorMessages.IsGreaterThanErrorMessage(key, comparer.ToString()));
 
         /// <summary>
         /// Requires a list count is greater than
@@ -147,7 +147,7 @@ namespace Flunt.Validations
         /// <param name="key"></param>
         /// <returns></returns>
         public Contract<T> IsGreaterOrEqualsThan<TList>(IEnumerable<TList> val, int comparer, string key) =>
-            IsGreaterOrEqualsThan(val, comparer, key, FluntErrorMessages.IsGreaterOrEqualsThanErrorMessage(key, comparer.ToString()));
+            IsGreaterOrEqualsThan(val, comparer, key, GatekeeperErrorMessages.IsGreaterOrEqualsThanErrorMessage(key, comparer.ToString()));
 
         /// <summary>
         /// Requires a list count is greater or equals than
@@ -175,7 +175,7 @@ namespace Flunt.Validations
         /// <param name="key"></param>
         /// <returns></returns>
         public Contract<T> IsLowerThan<TList>(IEnumerable<TList> val, int comparer, string key) =>
-            IsLowerThan(val, comparer, key, FluntErrorMessages.IsLowerThanErrorMessage(key, comparer.ToString()));
+            IsLowerThan(val, comparer, key, GatekeeperErrorMessages.IsLowerThanErrorMessage(key, comparer.ToString()));
 
         /// <summary>
         /// Requires a list count is lower than
@@ -203,7 +203,7 @@ namespace Flunt.Validations
         /// <param name="key"></param>
         /// <returns></returns>
         public Contract<T> IsLowerOrEqualsThan<TList>(IEnumerable<TList> val, int comparer, string key) =>
-            IsLowerOrEqualsThan(val, comparer, key, FluntErrorMessages.IsLowerOrEqualsThanErrorMessage(key, comparer.ToString()));
+            IsLowerOrEqualsThan(val, comparer, key, GatekeeperErrorMessages.IsLowerOrEqualsThanErrorMessage(key, comparer.ToString()));
 
         /// <summary>
         /// Requires a list count is lower or equals than

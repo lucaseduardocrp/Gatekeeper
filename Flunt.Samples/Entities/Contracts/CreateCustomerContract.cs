@@ -1,6 +1,7 @@
-﻿using Flunt.Validations;
+﻿using Gatekeeper.Samples.Entities;
+using Gatekeeper.Validations;
 
-namespace Flunt.Samples.Entities.Contracts
+namespace Gatekeeper.Samples.Entities.Contracts
 {
     public class CreateCustomerContract : Contract<Customer>
     {

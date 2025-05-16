@@ -1,8 +1,9 @@
 ﻿using System;
-using Flunt.Samples.Entities.Contracts;
-using Flunt.Samples.ValueObjects;
+using Gatekeeper.Samples.Entities.Contracts;
+using Gatekeeper.Samples.Entities;
+using Gatekeeper.Samples.ValueObjects;
 
-namespace Flunt.Samples.Entities
+namespace Gatekeeper.Samples.Entities
 {
     public class Customer : Entity
     {

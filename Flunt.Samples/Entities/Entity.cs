@@ -1,7 +1,7 @@
 ﻿using System;
-using Flunt.Notifications;
+using Gatekeeper.Notifications;
 
-namespace Flunt.Samples.Entities
+namespace Gatekeeper.Samples.Entities
 {
     public abstract class Entity : Notifiable<Notification>
     {
