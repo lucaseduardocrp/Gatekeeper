@@ -5,8 +5,6 @@
 
     <PackageId>NexumPack.Gatekeeper</PackageId>
     <Version>1.0.0</Version>
-    <icon>https://res.cloudinary.com/deucbdng3/image/upload/v1747438907/Group_7_lyhfm9.png</icon>
-    <License>MIT</License>
 	<Authors>Lucas Eduardo</Authors>
 	<Copyright>Copyright © 2025 Lucas Eduardo Crespo de Carvalho</Copyright>
     <Company>NexumPack</Company>
